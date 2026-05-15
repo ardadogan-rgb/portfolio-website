@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ahmet Arda Doğan - Web Developer & Designer Portfolio. Showcasing creative web projects and modern designs.">
+  <title>Ahmet Arda Doğan | Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Ahmet<span class="accent">Arda</span></a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="hero-tag">
+            <span class="dot"></span>
+            <span>Available for Projects</span>
+          </div>
+          <h1>Hi, I'm <span class="gradient-text">Ahmet Arda</span><span class="typing-cursor">|</span></h1>
+          <p class="hero-desc">A passionate web developer and designer crafting beautiful, responsive, and user-friendly
+            digital experiences.</p>
+          <div class="hero-buttons">
+            <a href="portfolio.html" class="btn btn-primary"><i class="fas fa-eye"></i> View My Work</a>
+            <a href="contact.html" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>15<span>+</span></h3>
+              <p>Projects Done</p>
+            </div>
+            <div class="stat-item">
+              <h3>3<span>+</span></h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3>10<span>+</span></h3>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-img-wrapper">
+            <img src="documentation/screenshots/profıle.jpeg" alt="Ahmet Arda Doğan">
+            <div class="hero-img-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Image Slider Section ===== -->
+  <section class="slider-section" id="slider-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Featured Work</p>
+        <h2>My Latest <span class="gradient-text">Projects</span></h2>
+        <p>A selection of recent projects I've worked on</p>
+      </div>
+      <div class="slider" id="imageSlider">
+        <div class="slider-track" id="sliderTrack">
+          <div class="slide">
+            <img src="assets/images/project-dashboard.png" alt="Analytics Dashboard Project">
+            <div class="slide-overlay">
+              <h3>Analytics Dashboard</h3>
+              <p>A modern data visualization platform with real-time analytics</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/images/project-ecommerce.png" alt="E-Commerce Website">
+            <div class="slide-overlay">
+              <h3>E-Commerce Platform</h3>
+              <p>Full-featured online shopping experience with elegant design</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/images/project-weather.png" alt="Weather Application">
+            <div class="slide-overlay">
+              <h3>Weather Application</h3>
+              <p>Beautiful weather forecasting app with live data integration</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/images/project-taskmanager.png" alt="Task Manager Application">
+            <div class="slide-overlay">
+              <h3>Task Manager</h3>
+              <p>Kanban-style project management tool for team collaboration</p>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn prev" id="sliderPrev" aria-label="Previous slide"><i
+            class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next" id="sliderNext" aria-label="Next slide"><i
+            class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Ahmet<span class="accent">Arda</span></a>
+          <p>Web developer and designer passionate about creating beautiful and functional websites.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">Web Design</a>
+          <a href="services.html">Development</a>
+          <a href="services.html">UI/UX</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:ahmetarda@email.com"><i class="fas fa-envelope"></i> ahmetarda@email.com</a>
+          <a href="contact.html"><i class="fas fa-paper-plane"></i> Contact Form</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ahmet Arda Doğan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

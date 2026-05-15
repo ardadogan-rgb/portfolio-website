@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Ahmet Arda Doğan for web development projects and collaborations.">
+  <title>Contact | Ahmet Arda Doğan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Ahmet<span class="accent">Arda</span></a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact <span class="gradient-text">Me</span></h1>
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Get In Touch</p>
+        <h2>Let's Work <span class="gradient-text">Together</span></h2>
+        <p>Have a project in mind? Feel free to reach out and let's discuss how I can help.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <div class="contact-info-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>ahmetarda@email.com</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+90 555 123 4567</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Cyprus</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon - Fri: 9:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form reveal" id="contactFormWrapper">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                <span class="error-msg">Please enter your first name</span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                <span class="error-msg">Please enter your last name</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              <span class="error-msg">Please enter a valid email address</span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="web-design">Web Design</option>
+                <option value="development">Development</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error-msg">Please select a subject</span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+              <span class="error-msg">Please enter your message (min 10 characters)</span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <!-- Success Message -->
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Ahmet<span class="accent">Arda</span></a>
+          <p>Web developer and designer passionate about creating beautiful and functional websites.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a></div>
+        <div class="footer-col"><h4>Services</h4><a href="services.html">Web Design</a><a href="services.html">Development</a><a href="services.html">UI/UX</a></div>
+        <div class="footer-col"><h4>Contact</h4><a href="mailto:ahmetarda@email.com"><i class="fas fa-envelope"></i> ahmetarda@email.com</a><a href="contact.html"><i class="fas fa-paper-plane"></i> Contact Form</a></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Ahmet Arda Doğan. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+</html>

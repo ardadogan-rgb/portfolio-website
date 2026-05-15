@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ahmet Arda Doğan - Browse my web development and design projects.">
+  <title>Portfolio | Ahmet Arda Doğan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Ahmet<span class="accent">Arda</span></a>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>My <span class="gradient-text">Portfolio</span></h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span>/</span><span>Portfolio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">My Work</p>
+        <h2>Recent <span class="gradient-text">Projects</span></h2>
+        <p>Explore a collection of my latest web development projects</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-btns reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+        <div class="portfolio-card reveal" data-category="web" data-title="Analytics Dashboard" data-desc="A comprehensive analytics dashboard featuring real-time data visualization, interactive charts, and a sleek dark UI. Built with modern JavaScript and CSS Grid." data-techs="HTML,CSS,JavaScript,Chart.js">
+          <div class="card-img"><img src="assets/images/project-dashboard.png" alt="Analytics Dashboard"></div>
+          <div class="card-content">
+            <div class="card-tags"><span class="card-tag">Web App</span><span class="card-tag">JavaScript</span></div>
+            <h3>Analytics Dashboard</h3>
+            <p>Real-time data visualization platform with interactive charts</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="design" data-title="E-Commerce Platform" data-desc="An elegant e-commerce frontend with product catalog, shopping cart functionality, and responsive design. Features dark theme with gold accents." data-techs="HTML,CSS,JavaScript,Responsive">
+          <div class="card-img"><img src="assets/images/project-ecommerce.png" alt="E-Commerce Platform"></div>
+          <div class="card-content">
+            <div class="card-tags"><span class="card-tag">Design</span><span class="card-tag">E-Commerce</span></div>
+            <h3>E-Commerce Platform</h3>
+            <p>Full-featured online shopping experience with elegant UI</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="frontend" data-title="Weather Application" data-desc="A beautiful weather application with glassmorphism design, 5-day forecast, and location-based weather data. Clean UI with animated weather icons." data-techs="HTML,CSS,JavaScript,API">
+          <div class="card-img"><img src="assets/images/project-weather.png" alt="Weather Application"></div>
+          <div class="card-content">
+            <div class="card-tags"><span class="card-tag">Frontend</span><span class="card-tag">API</span></div>
+            <h3>Weather Application</h3>
+            <p>Beautiful weather forecast app with live data integration</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="web" data-title="Task Manager" data-desc="A Kanban-style task management application with drag-and-drop functionality, team collaboration features, and project tracking. Built for productivity." data-techs="HTML,CSS,JavaScript,Drag&Drop">
+          <div class="card-img"><img src="assets/images/project-taskmanager.png" alt="Task Manager"></div>
+          <div class="card-content">
+            <div class="card-tags"><span class="card-tag">Web App</span><span class="card-tag">Productivity</span></div>
+            <h3>Task Manager</h3>
+            <p>Kanban-style project management tool for teams</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      <img id="modalImg" src="" alt="Project Preview">
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <h4 style="margin-bottom:10px;">Technologies Used</h4>
+        <div class="modal-techs" id="modalTechs"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Ahmet<span class="accent">Arda</span></a>
+          <p>Web developer and designer passionate about creating beautiful and functional websites.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a></div>
+        <div class="footer-col"><h4>Services</h4><a href="services.html">Web Design</a><a href="services.html">Development</a><a href="services.html">UI/UX</a></div>
+        <div class="footer-col"><h4>Contact</h4><a href="mailto:ahmetarda@email.com"><i class="fas fa-envelope"></i> ahmetarda@email.com</a><a href="contact.html"><i class="fas fa-paper-plane"></i> Contact Form</a></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Ahmet Arda Doğan. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+</html>
